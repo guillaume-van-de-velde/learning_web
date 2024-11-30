@@ -13,7 +13,7 @@
       <ul>
         <li>acceuil</li>
         <li>shop</li>
-        <li>blog</li>
+        <li><a href="#form">formulaire</a></li>
       </ul>
     </nav>
 
@@ -73,6 +73,44 @@
           <video src="escargot.mp4" height="200" autoplay muted loop></video>
         </div>
       </section>
+      <section id="form">
+        <h2>Les formulaires</h2>
+        <form action="">
+          <label for="name">Nom</label>
+          <input type="text" id="name" placeholder="entrez le nom">
+          <br>
+          <label for="age">Age</label>
+          <input type="number" id="age" value="18">
+          <br>
+          <label for="gender">Genre</label>
+          <select id="gender">
+            <option>Homme</option>
+            <option selected>Femme</option>
+          </select>
+          <div>
+            <input type="radio" name="type" id="human">
+            <label for="human">humain</label>
+            <input type="radio" name="type" id="dog">
+            <label for="dog">dog</label>
+            <input type="radio" name="type" id="cat">
+            <label for="cat">chat</label>
+          </div>
+          <textarea cols="50" rows="5">
+          </textarea>
+          <br>
+          <input type="checkbox" id="cgv">
+          <label for="cgv">Acceptez les cgv</label>
+          <br>
+          <input type="submit" value="valider">
+        </form>
+        <br>
+        <button>ceci est un boutton</button>
+      </section>
     </main>
+    <footer>
+      <a href="mailto:ssaaa.ele@gmail.com">Contactez moi</a>
+      <br>
+      <a href="notice" download="Notice">Telecharger la notice</a>
+    </footer>
   </body>
 </html>
