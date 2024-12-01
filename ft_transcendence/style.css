@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+
+@font-face {
+    font-family: "Sunrise";
+    src: url(./assets/fonts/WaitingfortheSunrise-Regular.ttf);
+}
+
+body{
+    font-family: "Sunrise", Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 15px
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 5px 1px 9px #00000080;
+    color: #49d1a880;
+    text-decoration: underline;
+    /* font-family: "Waiting for the Sunrise", cursive;
+    font-weight: 400;
+    font-style: normal; */
+}
