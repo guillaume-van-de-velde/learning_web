@@ -1,24 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
 
 @font-face {
-    font-family: "Sunrise";
-    src: url(./assets/fonts/WaitingfortheSunrise-Regular.ttf);
+  font-family: "Sunrise";
+  src: url(./assets/fonts/WaitingfortheSunrise-Regular.ttf);
 }
 
-body{
-    font-family: "Sunrise", Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 15px
+/* *{
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  font-family: "Sunrise", Verdana, Geneva, Tahoma, sans-serif;
+  background: url(./assets/img/balenciaga.jpg) center/cover;
+  min-height: 100vh;
 }
 
-h1{
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center;
-    font-size: 3rem;
-    text-shadow: 5px 1px 9px #00000080;
-    color: #49d1a880;
-    text-decoration: underline;
-    /* font-family: "Waiting for the Sunrise", cursive;
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 5px 1px 9px #00000080;
+  color: #49d1a880;
+  text-decoration: underline;
+  /* font-family: "Waiting for the Sunrise", cursive;
     font-weight: 400;
     font-style: normal; */
+}
+
+main{
+  min-height: 500px;
+  width: 90%;
+  background: rgba(165, 94, 94, 0.733);
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius: 20px 100px 50px 100px;
+  box-shadow: 0 0 0 black;
+  padding: 15px;
+}
+
+h2{
+  margin: 0;
+}
+
+.flexbox {
+  border: 2px dashed red;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.flexbox ul{
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexbox li{
+  list-style: none;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  background: turquoise;
+  display:flex;
+  justify-content: center;
 }
