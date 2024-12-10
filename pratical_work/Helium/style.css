@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    font-family: "Inter", sans-serif;
+    padding: 5px;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+body {
+    height: 100vh;
+    background: rgb(31, 31, 31);
+    color: white;
+}
+
+.nav-container h4 {
+    position: absolute;
+    font-size: 1.6rem;
+    margin-top: -7px;
+}
+
+.nav-container ul {
+    display: flex;
+    justify-content: end;
+}
+
+.nav-container li {
+    margin-left: 20%;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 80px 10px 80px 10px;
+}
+
+.presentation-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation-left-container {
+    h1 {
+        font-size: 4rem;
+    }
+    h4 {
+        color: rgb(38, 41, 255);
+        font-size: 1.5rem;
+        margin: 10px 0px;
+    }
+}
+
+.presentation-right {
+    margin-left: 30px;
+    padding-left: 20px;
+}
+
+.presentation-right-container img {
+    max-height: 50vh;
+}
+
+footer {
+    background: black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+}
+
+.footer-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer-left-container h4 {
+    margin: 5px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button {
+    margin-top: 5px;
+    background: rgb(38, 41, 255);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px;
+    border-color: transparent;
+    letter-spacing: 1px;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-around;
+    width: 67%;
+}
+
+.footer-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-right-container h4 {
+    padding-right:50px;
+}
+
+.investors {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.img-container img {
+    max-height: 65px;
+    min-height: 65px;
+}
