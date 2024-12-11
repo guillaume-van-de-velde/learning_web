@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 5px;
+    margin: 0px;
+    font-family: Inter;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background: rgb(31, 31, 31);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 5% 60% 20%;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+nav h4 {
+    font-size: 2rem;
+    padding-left: 15px;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-evenly;
+}
+
+nav li {
+    list-style: none;
+    text-align: center;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-height: 100%;
+}
+
+.header-left {
+    display: grid;
+}
+
+.header-left-container {
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+
+.header-left-container h1 {
+    font-size: 5rem;
+}
+
+.header-left-container h4 {
+    color: rgb(70, 57, 252);
+    font-size: 2rem;
+}
+
+.header-left-container p {
+    font-size: 0.8rem;
+}
+
+.header-right {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+section {
+    background: black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    justify-content: space-around;
+}
+
+.section-left {
+    display: grid;
+    grid-template-rows: 20% 70%;
+    align-content: space-around;
+}
+
+.section-left h4 {
+    text-align: center;
+}
+
+.button-container {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-container button {
+    border-radius: 10px;
+    background: rgb(70, 57, 252);
+    color: white;
+    border-color: transparent;
+    margin: 5px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 150px;
+}
+
+.section-right {
+    display: grid;
+    grid-template-rows: 20% 70%;
+    align-content: space-around;
+}
+
+.investors {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    justify-content: space-around;
+    margin: auto 0;
+}
+
+.investors img {
+    max-width: 100px;
+}

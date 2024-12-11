@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 5px;
+    margin: 0px;
+    font-family: Inter;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background: rgb(31, 31, 31);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h4 {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+nav li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+}
+
+.header-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.header-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header-left-container h1 {
+    font-size: 5rem;
+}
+
+.header-left-container h4 {
+    color: rgb(70, 57, 252);
+    font-size: 2rem;
+}
+
+.header-left-container p {
+    font-size: 0.8rem;
+}
+
+.header-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.header-right img {
+    width: 100%;
+}
+
+section {
+    background: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section-left h4 {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button-container button {
+    border-radius: 10px;
+    background: rgb(70, 57, 252);
+    color: white;
+    border-color: transparent;
+    margin: 2px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 150px;
+}
+
+.section-right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.investors {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.investors img {
+    max-width: 100px;
+}
