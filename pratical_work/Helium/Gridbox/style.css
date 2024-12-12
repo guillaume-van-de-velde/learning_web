@@ -36,6 +36,7 @@ nav ul {
 nav li {
     list-style: none;
     text-align: center;
+    margin: auto;
 }
 
 header {
@@ -71,6 +72,7 @@ header {
     max-width: 100%;
     max-height: 100%;
     overflow: hidden;
+    margin: auto;
 }
 
 section {
@@ -85,6 +87,9 @@ section {
     display: grid;
     grid-template-rows: 20% 70%;
     align-content: space-around;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
 }
 
 .section-left h4 {
@@ -95,8 +100,7 @@ section {
     display: grid;
     grid-template-rows: 33% 33% 33%;
     justify-content: center;
-    align-items: center;
-
+    align-items: end;
 }
 
 .button-container button {
@@ -125,4 +129,67 @@ section {
 
 .investors img {
     max-width: 100px;
+}
+
+@media screen and (max-width: 900px) {
+    .header-left-container {
+        h1 {
+            font-size: 3rem;
+        }
+        h4 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: 0.6rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        display: block;
+    }
+    nav {
+        grid-template-columns: 30% 70%;
+    }
+    header {
+        display: block;
+    }
+    .header-left-container {
+        text-align: center;
+        h1 {
+            font-size: 2rem;
+            content: "People- Powered Networks";
+        }
+    }
+    section {
+        display: block;
+    }
+    .section-right {
+        h4 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        h4 {
+            font-size: 1rem;
+            margin: auto 0;
+        }
+        font-size: 0.7rem;
+    }
+    .investors img {
+        max-width: 70px;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .button-container button {
+        height: 20px;
+        font-size: 0.5rem;
+    }
 }
