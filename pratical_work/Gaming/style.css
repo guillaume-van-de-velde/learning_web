@@ -1,0 +1,50 @@
+* {
+    padding: 5;
+    margin: 0;
+}
+
+body {
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 2% 0%;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:hover:not(#button-language) {
+    color: purple;
+    text-decoration: overline purple 2px;
+    letter-spacing: 1px;
+}
+
+#button-language {
+    background: rgb(221, 221, 221);
+    border-radius: 15px;
+    /* height: 5px; */
+    padding: 0;
+    width: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#button-language:hover {
+    letter-spacing: 1px;
+}
