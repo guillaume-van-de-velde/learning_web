@@ -4,7 +4,13 @@
 }
 
 body {
+    display: grid;
+    grid-template-rows: 5% 20% 5% 20% 40% 20% 0.1% 5% 5%;
+}
 
+.fa-solid {
+    padding-left: 20px;
+    padding-top: 3px;
 }
 
 nav {
@@ -38,7 +44,6 @@ nav ul li:hover:not(#button-language) {
 #button-language {
     background: rgb(221, 221, 221);
     border-radius: 15px;
-    /* height: 5px; */
     padding: 0;
     width: 90px;
     display: flex;
@@ -48,3 +53,333 @@ nav ul li:hover:not(#button-language) {
 #button-language:hover {
     letter-spacing: 1px;
 }
+
+header {
+    background: url(./img/bg.jpg) no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header-content {
+    display: grid;
+    grid-template-rows: 70% 15% 15%;
+}
+
+#logo-gc {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#logo-gc img {
+    height: 100%;
+}
+
+.header-content h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.button-header {
+    display: flex;
+    justify-content: center;
+}
+
+.button-header button {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    padding-inline: 5%;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.intro-sentence {
+    display: flex;
+    justify-content: center;
+    padding: 2% 10%;
+}
+
+.intro-sentence h5 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.gaming {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+.gaming-content {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    padding: 5% 0%;
+}
+
+.business-school {
+    display: grid;
+    grid-template-rows: 50% 10% 20% 20%;
+}
+
+.img-gbs {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+.business-school h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.business-school p {
+    text-align: center;
+    padding: 0% 5%;
+}
+
+.button-gbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.business-school button {
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    padding-inline: 0%;
+    letter-spacing: 1px;
+}
+
+.academy {
+    display: grid;
+    grid-template-rows: 50% 10% 20% 20%;
+}
+
+.img-academy {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+.academy h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.academy p {
+    text-align: center;
+    padding: 0% 5%;
+}
+
+.button-academy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.academy button {
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    padding-inline: 0%;
+    letter-spacing: 1px;
+}
+
+.guru {
+    display: grid;
+    grid-template-rows: 50% 10% 20% 20%;
+}
+
+.img-guru {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+.guru h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.guru p {
+    text-align: center;
+    padding: 0% 5%;
+}
+
+.button-guru {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guru button {
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    padding-inline: 0%;
+    letter-spacing: 1px;
+}
+
+.news {
+    padding: 5% 9%;
+    display: flex;
+    justify-content: center;
+}
+
+.news-content {
+    display: grid;
+    grid-template-rows: 20% 70%;
+    align-content: space-evenly;
+}
+
+.news-intro {
+    display: grid;
+    grid-template-columns: 65% 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-title h4{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.news-button {
+    display: flex;
+    justify-content: center;
+}
+
+.news-button button {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+    border-width: 1px;
+    padding-inline: 10%;
+    padding-block: 5%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.news-button button i {
+    padding-left: 5px;
+}
+
+.news-events {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+}
+
+.reunion {
+    display: grid;
+    grid-template-rows: 40% 10% 30% 5%;
+    align-content: space-around;
+}
+
+.img-reunion img {
+    height: 100%;
+}
+
+.reunion h4 {
+    display: flex;
+    align-items: center;
+}
+
+.reunion p {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.reunion a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(49, 0, 128);
+}
+
+.pgw {
+    display: grid;
+    grid-template-rows: 40% 15% 30% 5%;
+    align-content: space-around;
+}
+
+.img-pgw img {
+    height: 100%;
+}
+
+.pgw h4 {
+    display: flex;
+    align-items: center;
+}
+
+.pgw p {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.pgw a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(49, 0, 128);
+}
+
+.inauguration {
+    display: grid;
+    grid-template-rows: 40% 15% 30% 5%;
+    align-content: space-around;
+}
+
+.img-inauguration img {
+    height: 100%;
+}
+
+.inauguration h4 {
+    display: flex;
+    align-items: center;
+}
+
+.inauguration p {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.inauguration a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(49, 0, 128);
+}
+
