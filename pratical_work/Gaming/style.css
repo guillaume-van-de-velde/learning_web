@@ -5,7 +5,7 @@
 
 body {
     display: grid;
-    grid-template-rows: 5% 20% 5% 20% 40% 20% 0.1% 5% 5%;
+    grid-template-rows: 5% 30% 5% 20% 40% 20% 0.1% 10% 8%;
 }
 
 .fa-solid {
@@ -55,7 +55,7 @@ nav ul li:hover:not(#button-language) {
 }
 
 header {
-    background: url(./img/bg.jpg) no-repeat center/cover;
+    background: url(./img/bg.jpg) no-repeat center/cover fixed;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -96,6 +96,13 @@ header {
     padding-inline: 5%;
     font-size: 1.4rem;
     letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.button-header button:hover {
+    color: black;
+    background-color: white;
+    letter-spacing: 3px;
 }
 
 .intro-sentence {
@@ -118,12 +125,13 @@ header {
 
 .gaming-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     width: 85%;
     padding: 5% 0%;
 }
 
 .business-school {
+    width: 30%;
     display: grid;
     grid-template-rows: 50% 10% 20% 20%;
 }
@@ -163,9 +171,18 @@ header {
     border-width: 1px;
     padding-inline: 0%;
     letter-spacing: 1px;
+    transition: 0.4s;
+}
+
+.business-school button:hover {
+    background-color: white;
+    color: black;
+    letter-spacing: 2px;
+    width: 60%;
 }
 
 .academy {
+    width: 30%;
     display: grid;
     grid-template-rows: 50% 10% 20% 20%;
 }
@@ -205,9 +222,18 @@ header {
     border-width: 1px;
     padding-inline: 0%;
     letter-spacing: 1px;
+    transition: 0.4s;
+}
+
+.academy button:hover {
+    background-color: white;
+    color: black;
+    letter-spacing: 2px;
+    width: 60%;
 }
 
 .guru {
+    width: 30%;
     display: grid;
     grid-template-rows: 50% 10% 20% 20%;
 }
@@ -247,10 +273,18 @@ header {
     border-width: 1px;
     padding-inline: 0%;
     letter-spacing: 1px;
+    transition: 0.4s;
+}
+
+.guru button:hover {
+    background-color: white;
+    color: black;
+    letter-spacing: 2px;
+    width: 60%;
 }
 
 .news {
-    padding: 5% 9%;
+    padding: 5% 7%;
     display: flex;
     justify-content: center;
 }
@@ -287,10 +321,16 @@ header {
     padding-block: 5%;
     letter-spacing: 2px;
     text-transform: uppercase;
+    transition: 0.4s;
 }
 
 .news-button button i {
     padding-left: 5px;
+}
+
+.news-button button:hover
+{
+    letter-spacing: 3px;
 }
 
 .news-events {
@@ -383,3 +423,177 @@ header {
     color: rgb(49, 0, 128);
 }
 
+.gaming-infos {
+    display: flex;
+    justify-content: center;
+    padding: 1% 4%;
+}
+
+.gaming-infos-content {
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: 20% 20% 20% 20%;
+}
+
+.img-gaming-campus {
+    display: flex;
+    align-items: center;
+}
+
+.img-gaming-campus img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.infos-pratiques {
+    height: 80%;
+    display: grid;
+    grid-template-rows: 10% 80%;
+    align-content: space-around;
+}
+
+.infos-pratiques h4 {
+    text-transform: uppercase;
+}
+
+.infos-pratiques ul {
+    list-style: none;
+    padding-left: 0;
+    color: rgb(49, 0, 128);
+}
+
+.infos-pratiques ul li {
+    padding-bottom: 10px;
+}
+
+.parents {
+    height: 75%;
+    display: grid;
+    grid-template-rows: 15% 30% 15%;
+}
+
+.parents h4 {
+    text-transform: uppercase;
+}
+
+.parents p {
+    font-weight: bold;
+}
+
+.contact {
+    height: 80%;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    align-items: center;
+}
+
+.tel-mail {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 20% 20%;
+    align-content: space-around;
+}
+
+.tel-mail h4 {
+    text-transform: uppercase;
+}
+
+.tel-mail p {
+    font-weight: bold;
+}
+
+.networks {
+    height: 80%;
+    display: grid;
+    grid-template-rows: 30% 30%;
+    align-content: space-around;
+    align-items: center;
+}
+
+.networks h4 {
+    text-transform: uppercase;
+}
+
+.logos {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.copyright {
+    font-weight: bold;
+}
+
+.journaux {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.journaux-content {
+    height: 50%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title-journaux {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 60% 30%;
+    align-content: space-around;
+    align-items: center;
+}
+
+.title-journaux h4 {
+    text-transform: uppercase;
+}
+
+.title-journaux p {
+    font-weight: bold;
+}
+
+.img-journaux {
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-journaux img {
+    max-height: 25%;
+    max-width: 25%;
+    padding: 1%;
+}
+
+.partenaires {
+    background-color: rgb(17, 17, 17);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partenaires-content {
+    display: grid;
+    grid-template-rows: 25% 50%;
+    align-content: space-around;
+    width: 90%;
+    height: 90%;
+}
+
+.title-partenaires {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.img-partenaires {
+    display: grid;
+    grid-template-columns: 11% 9% 9% 10% 6% 10% 16% 6% 5% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
