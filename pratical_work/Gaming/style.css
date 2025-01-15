@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&display=swap');
+
 * {
     padding: 5;
     margin: 0;
@@ -6,6 +8,11 @@
 body {
     display: grid;
     grid-template-rows: 5% 30% 5% 20% 40% 20% 0.1% 10% 8%;
+    font-family: Montserrat;
+}
+
+button {
+    cursor: pointer;
 }
 
 .fa-solid {
@@ -39,6 +46,7 @@ nav ul li:hover:not(#button-language) {
     color: purple;
     text-decoration: overline purple 2px;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 #button-language {
@@ -48,6 +56,7 @@ nav ul li:hover:not(#button-language) {
     width: 90px;
     display: flex;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 #button-language:hover {
@@ -127,7 +136,7 @@ header {
     display: flex;
     justify-content: space-around;
     width: 85%;
-    padding: 5% 0%;
+    padding: 3% 0%;
 }
 
 .business-school {
@@ -596,4 +605,33 @@ header {
     grid-template-columns: 11% 9% 9% 10% 6% 10% 16% 6% 5% 4%;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (max-width:1300px) {
+    nav ul li {
+        font-size: 0.8rem;
+    }
+    .parents {
+        grid-template-rows: 15% 50% 15%;
+    }
+    .gaming-content p {
+        width: 80%;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .parents {
+        grid-template-rows: 15% 75% 10%;
+    }
+    .title-journaux p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .news-button button {
+        padding-inline: 5%;
+        letter-spacing: 1px;
+    }
 }
