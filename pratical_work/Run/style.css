@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;1,200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Source Sans 3", serif;
+}
+
+button {
+    padding-inline: 3%;
+    background-color: transparent;
+    border-width: 1px;
+    border-radius: 30px;
+    border-style: double;
+    font-size: 2rem;
+    padding-block: 1%;
+    cursor: pointer;
+    font: 700 1.5rem "Source Sans 3";
+    transition: 0.3s;
+}
+
+button:hover {
+    color: skyblue;
+    border-color: skyblue;
+}
+
+header > * {
+    min-height: 90vh;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.header1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.header2 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.header3 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.text-zone {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+}
+
+.text {
+    text-align: left;
+}
+
+.text h2 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+.text p {
+    padding: 5% 0;
+    line-height: 36px;
+}
+
+.header1 .picture {
+    background: url(img/banner.jpg) right/cover;
+}
+
+.header2 .picture {
+    background: url(img/img-left.jpg) center/cover;
+}
+
+.header3 .picture {
+    background: url(img/img-right.jpg) center/cover;
+}
+
+.inscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.inscription-content {
+    display: block;
+    width: 80%;
+    padding: 5% 0;
+}
+
+.inscription-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.grid-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+    "na em"
+    "mes mes"
+    ;
+    padding: 3% 0;
+}
+
+label {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    padding: 3% 0;
+}
+
+.name {
+    padding: 3% 0;
+    grid-area: na;
+}
+
+#name {
+    height: 60%;
+    width: 90%;
+}
+
+.email {
+    grid-area: em;
+    padding: 3% 0;
+}
+
+#email {
+    height: 60%;
+    width: 90%;
+}
+
+.message {
+    grid-area: mes;
+    padding: 3% 0;
+}
+
+#message {
+    min-height: 60%;
+    max-height: 90%;
+    width: 100%;
+}
+
+input[type="text"], textarea {
+    padding: 10px;
+    font-size: 2rem;
+    outline: none;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: skyblue;
+    border-style: double;
+}
+
+textarea {
+    resize: none;
+}
+
+.inscription::after {
+    content: "";
+    height: 1px;
+    width: 90%;
+    background-color: rgb(206, 206, 206);
+    position: absolute;
+    bottom: 0;
+}
+
+footer {
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.networks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.networks button {
+    padding-inline: 14px;
+    padding-block: 7px;
+}
+
+@media screen and (max-width: 1000px) {
+
+#name {
+    height: 30%;
+    width: 80%;
+}
+
+#email {
+    height: 30%;
+    width: 80%;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+    .header1 {
+        min-height: 100vh;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: none;
+    }
+    .header2 {
+        grid-template-columns: none;
+    }
+    .header3 {
+        grid-template-columns: none;
+    }
+    .header2 .picture {
+        display: none;
+    }
+    .header3 .picture {
+        display: none;
+    }
+    header > * {
+        display: block;
+        min-height: 50vh;
+    }
+    .networks {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #name {
+        height: 30%;
+        width: 60%;
+    }
+    
+    #email {
+        height: 30%;
+        width: 60%;
+    }
+}
