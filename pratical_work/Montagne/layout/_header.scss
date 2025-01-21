@@ -1,0 +1,27 @@
+header {
+    @include centerChild;
+    height: 90%;
+    color: $_white;
+    .header-content {
+        height: 60%;
+        width: 60%;
+        padding-top: 10%;
+        h1 {
+            font-size: 5rem;
+            width: 80%;
+        }
+        p {
+            padding: 5% 0;
+            font-size: 1rem;
+            font-weight: bold;
+            font-style: italic;
+        }
+        i {
+            font-size: 2rem;
+            border: solid 1px $_white;
+            padding-block: 32px;
+            padding-inline: 37px;
+            border-radius: 100px;
+        }
+    }
+}

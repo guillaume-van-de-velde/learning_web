@@ -1,0 +1,32 @@
+nav {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 45% 30%;
+    align-items: center;
+    justify-content: space-between;
+    background: $_nav;
+    ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+            color: $_white;
+            width: 100%;
+            padding: 15px 5px;
+            transition: 0.3s;
+            &:hover {
+                background: $_white;
+                color: $_black;
+            }
+        }
+        #fix_color {
+            background: $_white;
+            color: $_black;
+        }
+        &:hover #fix_color:not(:hover) {
+            background: none;
+            color: $_white;
+        }
+    }
+}
