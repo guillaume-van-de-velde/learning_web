@@ -6,6 +6,7 @@
   margin: 0 auto;
   text-transform: uppercase;
   font-family: "Inter";
+  box-sizing: border-box;
 }
 
 p {
@@ -300,12 +301,4 @@ nav ul:hover #fix_color:not(:hover) {
   cursor: pointer;
   background: rgb(19, 19, 19);
   color: rgb(233, 233, 233);
-}
-
-.information::after {
-  content: "";
-  height: 10%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
 }/*# sourceMappingURL=style.css.map */
