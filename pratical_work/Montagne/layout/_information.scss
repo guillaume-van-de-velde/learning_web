@@ -1,0 +1,98 @@
+.information {
+    margin: 3% auto;
+    background: $_white;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .formulaire {
+        padding: 5% 0;
+        width: 100%;
+        border-right: solid 1px $_sep;
+        form {
+            width: 80%;
+            height: 100%;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 3fr 1fr;
+            & > *{
+                padding: 4% 0;
+            }
+            & > label {
+                padding-top: 7%;
+            }
+            submit {
+                justify-content: center;
+                border: solid 1px black;
+                width: 25%;
+                padding-block: 15px;
+                padding-inline: 10px;
+                margin-top: 7%;
+                display: flex;
+                justify-content: center;
+                letter-spacing: 1px;
+                transition: 0.3s;
+            }
+            submit:hover {
+                letter-spacing: 1px;
+                background: $_black;
+                color: $_white;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    .contact {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        .contact-child {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-bottom: solid 1px $_sep;
+            .contact-child-content {
+                width: 80%;
+                display: flex;
+                align-items: center;
+                position: relative;
+                p {
+                    margin: 0;
+                    font-size: small;
+                    position: absolute;
+                    left: 30%;
+                    color: gray;
+                }
+                #two-lines {
+                    text-align: left;
+                    top:-11px;
+                }
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 50%;
+                    position: absolute;
+                    left: 28%;
+                    li {
+                        border: solid 1px $_sep;
+                        padding-inline: 15px;
+                        padding-block: 13px; 
+                        border-radius: 30px;
+                        transition: 0.3s;
+                    }
+                    li:hover {
+                        cursor: pointer;
+                        background: $_black;
+                        color: $_white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.information::after {
+    content: "";
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

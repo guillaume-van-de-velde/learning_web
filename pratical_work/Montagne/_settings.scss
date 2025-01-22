@@ -8,8 +8,10 @@
 }
 
 $_black: rgb(19, 19, 19);
-$_white: rgb(223, 223, 223);
+$_white: rgb(233, 233, 233);
 $_nav: rgba(255, 255, 255, 0.151);
+$_sep: rgb(202, 202, 202);
+$_info: rgb(94, 94, 94);
 
 * {
     padding: 0;
@@ -21,7 +23,7 @@ $_nav: rgba(255, 255, 255, 0.151);
 
 p {
     letter-spacing: 1px;
-    line-height: 30px;
+    line-height: 40px;
     text-transform: none;
     font-family: "Merriweather";
 }
@@ -43,9 +45,25 @@ button {
     }
 }
 
-h3, label {
+h3, label, submit {
     display: flex;
     align-items: center;
+    font-size: small;
+    margin: 0;
+    color: $_info;
+    cursor: pointer;
+}
+
+input[type="text"], textarea {
+    cursor: pointer;
+    text-align: left;
+    color: $_info;
+    margin: 0;
+    border-radius: 5px;
+    border-width: 1px;
+    outline: none;
+    text-indent: 10px;
+    resize: none;
 }
 
 li {
