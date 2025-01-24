@@ -1,20 +1,22 @@
 header {
     @include centerChild;
-    height: 90%;
+    margin: 10% auto;
     color: $_white;
     .header-content {
-        height: 60%;
         width: 60%;
-        padding-top: 10%;
         h1 {
             font-size: 5rem;
             width: 80%;
+            letter-spacing: 6px;
         }
         p {
             padding: 5% 0;
             font-size: 1rem;
             font-weight: bold;
             font-style: italic;
+        }
+        a {
+            color: $_white;
         }
         i {
             font-size: 2rem;
@@ -31,6 +33,46 @@ header {
             padding-inline: 52px;
             border-radius: 100px;
             transform:translateY(-20px);
+        }
+        transform: translateY(40px);
+        opacity: 0;
+        animation: animHeader 1.5s forwards;
+        @keyframes animHeader {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+    @media screen and (max-width: 800px) {
+        .header-content {
+            width: 90%;
+            h1 {
+                font-size: 3rem;
+                letter-spacing: 0px;
+            }
+            p {
+                font-size: 0.8rem;
+                padding: 10% 0;
+            }
+            i {
+                font-size: 1rem;
+                padding-block: 16px;
+                padding-inline: 19px;
+            }
+            i:hover {
+                font-size: 2rem;
+                padding-block: 23px;
+                padding-inline: 28px;
+                transform:translateY(-10px);
+            }
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .header-content {
+            h1 {
+                font-size: 2rem;
+            }
         }
     }
 }

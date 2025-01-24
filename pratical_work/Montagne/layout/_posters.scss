@@ -1,78 +1,115 @@
 .posters-part {
     background: $_white;
     width: 90%;
-}
-
-.poster {
-    padding: 3% 0%;
-    & > * {
-        padding: 3% 0;
-    }
-    .date {
-        position: relative;
+    .poster {
+        padding: 3% 0%;
+        & > * {
+            padding: 3% 0;
+        }
+        .date {
+            position: relative;
+            p {
+                text-align: center;
+            }
+            p::before {
+                content: "";
+                width: 30%;
+                height: 1px;
+                background-color: rgb(202, 202, 202);
+                position: absolute;
+                left: 10%;
+                top: 50%;
+            }
+            p::after {
+                content: "";
+                width: 30%;
+                height: 1px;
+                background-color: $_sep;
+                position: absolute;
+                right: 10%;
+                top: 50%;
+            }
+        }
+        h2 {
+            font-size: 3rem;
+            width: 40%;
+            letter-spacing: 2px;
+        }
         p {
-            text-align: center;
+            width: 40%;
+            font-style: italic;
+            text-align: left;
         }
-        p::before {
-            content: "";
-            width: 30%;
-            height: 1px;
-            background-color: rgb(202, 202, 202);
-            position: absolute;
-            left: 10%;
-            top: 50%;
-        }
-        p::after {
-            content: "";
-            width: 30%;
-            height: 1px;
-            background-color: $_sep;
-            position: absolute;
-            right: 10%;
-            top: 50%;
+        .picture {
+            width: 80%;
+            img {
+                width: 100%;
+            }
         }
     }
-    h2 {
-        font-size: 3rem;
-        width: 40%;
-    }
-    p {
-        width: 40%;
-        font-style: italic;
-        text-align: left;
-    }
-    .picture {
-        width: 80%;
-        img {
-            width: 100%;
+    .poster_halfpage {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 6% 0%;
+        padding-bottom: 0;
+        & > * {
+            padding: 6% 0;
+        }
+        .little_poster {
+            border-right: solid 1px $_sep;
+            border-top: solid 1px $_sep;
+        }
+        .date {
+            p::before {
+                display: none;
+            }
+            p::after {
+                display: none;
+            }
+        }
+        h2 {
+            font-size: 1.8rem;
+        }
+        p {
+            width: 80%;
         }
     }
-}
-
-.poster_halfpage {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 6% 0%;
-    padding-bottom: 0;
-    & > * {
-        padding: 6% 0;
-    }
-    .little_poster {
-        border-right: solid 1px $_sep;
-        border-top: solid 1px $_sep;
-    }
-    .date {
-        p::before {
-            display: none;
+    @media screen and (max-width: 800px) {
+        .poster {
+            h2 {
+                font-size: 1.8rem;
+                width: 60%;
+            }
+            p {
+                width: 80%;
+            }
+            .date {
+                p::before {
+                    content: "";
+                    width: 20%;
+                    height: 1px;
+                    background-color: $_sep;
+                    position: absolute;
+                    left: 10%;
+                    top: 50%;
+                }
+                p::after {
+                    content: "";
+                    width: 20%;
+                    height: 1px;
+                    background-color: $_sep;
+                    position: absolute;
+                    right: 10%;
+                    top: 50%;
+                }
+            }
         }
-        p::after {
-            display: none;
+        .poster_halfpage {
+            display: block;
+            padding: 3% 0;
+            & > * {
+                padding: 3% 0;
+            }
         }
-    }
-    h2 {
-        font-size: 1.8rem;
-    }
-    p {
-        width: 80%;
     }
 }

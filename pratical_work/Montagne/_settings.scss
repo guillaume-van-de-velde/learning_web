@@ -27,6 +27,13 @@ p {
     line-height: 40px;
     text-transform: none;
     font-family: "Merriweather";
+    @media screen and (max-width: 600px) {
+        font-size: 0.8rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 button {
@@ -47,12 +54,16 @@ button {
 }
 
 h3, label, submit {
+    letter-spacing: 1px;
     display: flex;
     align-items: center;
     font-size: small;
     margin: 0;
     color: $_info;
     cursor: pointer;
+    @media screen and (max-width: 600px) {
+        font-size: 0.7rem;
+    }
 }
 
 input[type="text"], textarea {
