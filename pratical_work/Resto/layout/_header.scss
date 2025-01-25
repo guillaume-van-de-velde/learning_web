@@ -1,0 +1,64 @@
+header {
+    padding-top: 3%;
+    color: $_white;
+    background: url("../img/bg-slider-06.jpg") center/cover;
+    height: 100vh;
+    font-family: "Poppins";
+    display: grid;
+    grid-template-rows: 10% 60%;
+    nav {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 10% 70% 10%;
+        justify-content: space-around;
+        .title {
+            @include centerChild;
+            font-family: "Allura";
+            font-size: 3rem;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                font-size: 4rem;
+                letter-spacing: 5px;
+            }
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            li {
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: 0.3s;
+                &:hover {
+                    letter-spacing: 2px;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .title {
+        @include centerChild;
+        .title-content {
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .welcome {
+                @include titleFormat;
+            }
+            .cutlery {
+                background: url("../img/ic-plate-big.png");
+                height: 50px;
+                width: 50px;
+            }
+            .slogan {
+                text-transform: uppercase;
+                font-family: "Roboto";
+                font-weight: lighter;
+                letter-spacing: 8px;
+            }
+        }
+    }
+}

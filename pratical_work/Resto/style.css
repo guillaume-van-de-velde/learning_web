@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Poppins";
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: rgb(31, 31, 31);
+  height: 100vh;
+}
+
+header {
+  padding-top: 3%;
+  color: rgb(231, 231, 231);
+  background: url("../img/bg-slider-06.jpg") center/cover;
+  height: 100vh;
+  font-family: "Poppins";
+  display: grid;
+  grid-template-rows: 10% 60%;
+}
+header nav {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 10% 70% 10%;
+  justify-content: space-around;
+}
+header nav .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Allura";
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header nav .title:hover {
+  font-size: 4rem;
+  letter-spacing: 5px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header nav ul li {
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header nav ul li:hover {
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+header .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .title-content {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header .title .title-content .welcome :nth-child(1) {
+  font-family: "Allura", serif;
+  color: rgb(194, 129, 92);
+  font-size: 5rem;
+}
+header .title .title-content .welcome :nth-child(2) {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+header .title .title-content .cutlery {
+  background: url("../img/ic-plate-big.png");
+  height: 50px;
+  width: 50px;
+}
+header .title .title-content .slogan {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: lighter;
+  letter-spacing: 8px;
+}/*# sourceMappingURL=style.css.map */
