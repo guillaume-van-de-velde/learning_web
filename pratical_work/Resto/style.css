@@ -664,4 +664,7 @@ footer .footer-content .right-part .networks ul {
 footer .footer-content .right-part .networks ul li {
   cursor: pointer;
   opacity: 0.5;
+}
+footer .footer-content .right-part .networks ul li:hover {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

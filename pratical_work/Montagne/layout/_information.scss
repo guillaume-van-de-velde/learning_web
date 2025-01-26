@@ -19,7 +19,7 @@
             & > label {
                 padding-top: 7%;
             }
-            submit {
+            input[type="submit"] {
                 justify-content: center;
                 border: solid 1px black;
                 width: 35%;
@@ -41,7 +41,7 @@
                     width: 55%;
                 }
             }
-            submit:hover {
+            input[type="submit"]:hover {
                 background: $_black;
                 color: $_white;
                 letter-spacing: 2px;

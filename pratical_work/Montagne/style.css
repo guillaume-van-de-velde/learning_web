@@ -42,7 +42,7 @@ button:hover {
   letter-spacing: 2px;
 }
 
-h3, label, submit {
+h3, label, input[type=submit] {
   letter-spacing: 1px;
   display: flex;
   align-items: center;
@@ -52,7 +52,7 @@ h3, label, submit {
   cursor: pointer;
 }
 @media screen and (max-width: 600px) {
-  h3, label, submit {
+  h3, label, input[type=submit] {
     font-size: 0.7rem;
   }
 }
@@ -343,7 +343,7 @@ nav ul:hover #fix_color:not(:hover) {
 .information .formulaire form > label {
   padding-top: 7%;
 }
-.information .formulaire form submit {
+.information .formulaire form input[type=submit] {
   justify-content: center;
   border: solid 1px black;
   width: 35%;
@@ -356,22 +356,22 @@ nav ul:hover #fix_color:not(:hover) {
   transition: 0.3s;
 }
 @media screen and (max-width: 1200px) {
-  .information .formulaire form submit {
+  .information .formulaire form input[type=submit] {
     width: 55%;
   }
 }
 @media screen and (max-width: 800px) {
-  .information .formulaire form submit {
+  .information .formulaire form input[type=submit] {
     width: 35%;
   }
 }
 @media screen and (max-width: 620px) {
-  .information .formulaire form submit {
+  .information .formulaire form input[type=submit] {
     font-size: 0.8rem;
     width: 55%;
   }
 }
-.information .formulaire form submit:hover {
+.information .formulaire form input[type=submit]:hover {
   background: rgb(19, 19, 19);
   color: rgb(233, 233, 233);
   letter-spacing: 2px;
