@@ -47,9 +47,16 @@ header {
             justify-content: space-between;
             .welcome {
                 @include titleFormat;
+                & :nth-child(1) {
+                    font-size: 5rem;
+                }
+                & :nth-child(2) {
+                    font-size: 6rem;
+                }
             }
             .cutlery {
-                background: url("../img/ic-plate-big.png");
+                background: none;
+                content: url("../img/ic-plate-big.png");
                 height: 50px;
                 width: 50px;
             }

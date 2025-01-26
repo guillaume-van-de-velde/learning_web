@@ -17,7 +17,6 @@ $_brown: rgb(194, 129, 92);
 @mixin brownTitle {
     font-family: "Allura", serif;
     color: $_brown;
-    font-size: 5rem;
 }
 
 @mixin titleFormat {
@@ -25,7 +24,6 @@ $_brown: rgb(194, 129, 92);
         @include brownTitle;
     }
     & :nth-child(2) {
-        font-size: 6rem;
         text-transform: uppercase;
     }
 }
@@ -43,6 +41,13 @@ h1, h2, h3, h4 {
 
 li {
     list-style: none;
+}
+
+.cutlery {
+    content: url("../img/ic-plate.png");
+    image-rendering:optimizeQuality;
+    height: 40px;
+    width: 40px;
 }
 
 body {

@@ -1,0 +1,118 @@
+.time {
+    margin-top: 20%;
+    width: 80%;
+    height: 80vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 70%;
+    background: $_black2;
+    .ouvertures {
+        width: 90%;
+        height: 95%;
+        color: $_white;
+        border : 1px dashed $_white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .title {
+            @include titleFormat;
+            & :nth-child(1) {
+                font-size: 3rem;
+                font-weight: lighter;
+                margin-bottom: -20px;
+            }
+            & :nth-child(2) {
+                padding: 0;
+                font-size: 2rem;
+            }
+        }
+        .time-data {
+            h3 {
+                color: $_brown;
+                font-weight: lighter;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+        }
+        .numero {
+            color: $_brown;
+            font-weight: lighter;
+        }
+    }
+    .reservation {
+        height: 100%;
+        width: 100%;
+        background: $_white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .title {
+            @include titleFormat;
+            & :nth-child(1) {
+                font-size: 3rem;
+                font-weight: lighter;
+                margin-bottom: -20px;
+            }
+            & :nth-child(2) {
+                padding: 0;
+                font-size: 2rem;
+            }
+        }
+        form {
+            font-family: "Poppins";
+            height: 50%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .input-data {
+                display: grid;
+                width: 70%;
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 10px;
+                & > * {
+                    cursor: pointer;
+                    text-align: left;
+                    width: 90%;
+                    border: none;
+                    border-bottom: 1px solid $_grey;
+                    background: $_white;
+                    width: 150px;
+                    height: 50px;
+                    &::placeholder {
+                        color: black;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                    &:focus::placeholder {
+                        color: transparent;
+                    }
+                }
+                & :nth-child(4), & :nth-child(5), & :nth-child(6) {
+                    opacity: 0.5;
+                }
+            }
+            button {
+                @include centerChild;
+                cursor: pointer;
+                background: $_black2;
+                color: $_white;
+                height: 15%;
+                width: 30%;
+                border-radius: 30px;
+                font-size: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: bold;
+                transition: 0.3s;
+                border: none;
+                &:hover {
+                    letter-spacing: 6px;
+                    width: 35%;
+                }
+            }
+        }
+    }
+}

@@ -21,7 +21,7 @@
                 <li>Contact</li>
             </ul>
             <ul class="networks">
-                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
                 <li><i class="fa-brands fa-twitter"></i></li>
                 <li><i class="fa-brands fa-instagram"></i></li>
             </ul>
@@ -47,7 +47,8 @@
             </div>
             <div class="cutlery"></div>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, repudiandae pariatur similique vel ullam omnis. Quae, debitis nesciunt! Dolore veritatis nisi odit necessitatibus corrupti officiis nobis aperiam aut ullam expedita.</p>
-            <div class="chef">
+            <div class="chef-icon"></div>
+            <div class="chef-data">
                 <h3>Russel Stephens</h3>
                 <p>Chef cook</p>
             </div>
@@ -57,15 +58,13 @@
     <section class="menu">
         <h3>Discover</h3>
         <div class="cutlery"></div>
-        <nav>
-            <ul>
-                <li>Breakfast</li>
-                <li>Lunch</li>
-                <li>Dinner</li>
-                <li>Drinks</li>
-                <li>Other</li>
-            </ul>
-        </nav>
+        <ul>
+            <li>Breakfast</li>
+            <li>Lunch</li>
+            <li>Dinner</li>
+            <li>Drinks</li>
+            <li>Other</li>
+        </ul>
         <div class="card">
             <div class="mushroom">
                 <div class="img"></div>
@@ -73,7 +72,7 @@
                     <p class="title">Italian source mushroom</p>
                     <p class="ingredients">Mushroom / Garlic / Veggies</p>
                 </div>
-                <p class="price">$12</p>
+                <p class="price"><i class="fa-solid fa-dollar-sign"></i>12</p>
             </div>
             <div class="potatoes">
                 <div class="img"></div>
@@ -81,7 +80,7 @@
                     <p class="title">Fried potatoes with garlic</p>
                     <p class="ingredients">Potatoes / Olive Oil / Garlic</p>
                 </div>
-                <p class="price">$22</p>
+                <p class="price"><i class="fa-solid fa-dollar-sign"></i>22</p>
             </div>
             <div class="tenu">
                 <div class="img"></div>
@@ -89,7 +88,7 @@
                     <p class="title">Tenu roast Source</p>
                     <p class="ingredients">Tuna / Potatoes / Rice</p>
                 </div>
-                <p class="price">$15</p>
+                <p class="price"><i class="fa-solid fa-dollar-sign"></i>15</p>
             </div>
             <div class="pork">
                 <div class="img"></div>
@@ -97,7 +96,7 @@
                     <p class="title">Roast pork (4 sticks)</p>
                     <p class="ingredients">Pork / Veggies / Shoyu</p>
                 </div>
-                <p class="price"> $18</p>
+                <p class="price"> <i class="fa-solid fa-dollar-sign"></i>18</p>
             </div>
             <div class="chicken">
                 <div class="img"></div>
@@ -105,7 +104,7 @@
                     <p class="title">Salted fried chicken</p>
                     <p class="ingredients">Chicken / Olive Oil / Salt</p>
                 </div>
-                <p class="price">$20</p>
+                <p class="price"><i class="fa-solid fa-dollar-sign"></i>20</p>
             </div>
             <div class="crab">
                 <div class="img"></div>
@@ -113,7 +112,7 @@
                     <p class="title">Crab with curry sources</p>
                     <p class="ingredients">Crab / Potatoes / Rice</p>
                 </div>
-                <p class="price">$14</p>
+                <p class="price"><i class="fa-solid fa-dollar-sign"></i>14</p>
             </div>
             <div class="steak">
                 <div class="img"></div>
@@ -121,7 +120,7 @@
                     <p class="title">Imported slamon steak</p>
                     <p class="ingredients">Salmon / Veggies / Oil</p>
                 </div>
-                <p class="price">$16</p>
+                <p class="price"><i class="fa-solid fa-dollar-sign"></i>16</p>
             </div>
             <div class="baked">
                 <div class="img"></div>
@@ -129,7 +128,7 @@
                     <p class="title">Baked potato pizza</p>
                     <p class="ingredients">Potato / Bread / Cheese</p>
                 </div>
-                <p class="price">$25</p>
+                <p class="price"><i class="fa-solid fa-dollar-sign"></i>25</p>
             </div>
         </div>
         <div class="img-background"></div>
@@ -149,7 +148,7 @@
                 </div>
             </div>
             <div class="time-data">
-                <h3 class="days">Saturday - Sunday</h3>
+                <h3 class="days">Saturday / Sunday</h3>
                 <div class="hour">
                     <p>8AM - 1 PM (Brunch)</p>
                     <p>1PM - 9PM (Lunch/Dinner)</p>
@@ -164,20 +163,16 @@
             </div>
             <div class="cutlery"></div>
             <form action="">
-                <label for="number">People</label>
-                <input type="number" id="number">
-                <label for="date">15/07/2020</label>
-                <input type="date" id="date">
-                <label for="hour">--:--</label>
-                <input type="datetime" id="hour">
-                <label for="name">Name</label>
-                <input type="text" id="name">
-                <label for="phone">Phone</label>
-                <input type="text" id="phone">
-                <label for="email">Email</label>
-                <input type="text" id="email">
+                <div class="input-data">
+                    <input type="number" placeholder="People" min="1" max="20">
+                    <input type="date" placeholder="15/07/2020">
+                    <input type="time" placeholder="">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Phone">
+                    <input type="text" placeholder="Email">
+                </div>
+                <button type="submit">Book now</button>
             </form>
-            <submit>Book now</submit>
         </div>
     </section>
     <section class="event">
@@ -237,10 +232,12 @@
     <section class="ceo">
         <div class="message-part">
             <div class="picture-ceo"></div>
-            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nam odio suscipit molestias earum maxime dicta excepturi libero, asperiores consequatur iure deserunt quos aliquam dolorem neque fugiat, distinctio incidunt amet!</p>
+            <p class="message"><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur dignissimos accusantium reiciendis dicta distinctio sed molestiae soluta sunt, aspernatur vero in atque nisi animi non qui saepe consequuntur est repudiandae.
+            Nulla illo voluptate doloribus praesentium dignissimos, minus culpa ullam. <i class="fa-solid fa-quote-right"></i></p>
             <h3>Russel Stephens</h3>
             <p class="role">CEO - HeadPassion</p>
         </div>
+        <div class="img-part"></div>
     </section>
     <footer>
         <div class="footer-content">
@@ -252,17 +249,16 @@
                 <form action="">
                     <label for="newsletter">Newsletter</label>
                     <input type="text" id="newsletter" placeholder="Your email address">
-                    <submit><i class="fa-solid fa-arrow-right"></i></submit>
                 </form>
-            </div>
-            <div class="networks">
-                <h4>Follow us:</h4>
-                <ul>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-pinterest"></i></li>
-                </ul>
+                <div class="networks">
+                    <h4>Follow us:</h4>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-pinterest"></i></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
