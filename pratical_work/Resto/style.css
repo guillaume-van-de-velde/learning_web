@@ -238,6 +238,7 @@ header .title .title-content .slogan {
   display: grid;
   grid-template-rows: repeat(1fr, 4);
   grid-template-columns: 50% 50%;
+  border-top: solid 5px rgb(194, 129, 92);
 }
 .menu .card > div {
   height: 90%;
@@ -688,8 +689,8 @@ header .title .title-content .slogan {
   width: 75px;
   border-radius: 50px;
   left: 50%;
-  top: -13%;
-  transform: translateX(-50%);
+  top: 0;
+  transform: translate(-50%, -50%);
 }
 .ceo .message-part .message {
   line-height: 30px;
@@ -731,9 +732,6 @@ header .title .title-content .slogan {
 @media screen and (max-width: 500px) {
   .ceo {
     height: 100vh;
-  }
-  .ceo .message-part .picture-ceo {
-    top: -7%;
   }
 }
 

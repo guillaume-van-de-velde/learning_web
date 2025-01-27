@@ -200,8 +200,6 @@ nav ul:hover #fix_color:not(:hover) {
     display: flex;
   }
   nav ul li {
-    height: 100%;
-    flex: 1;
     font-size: 0.8rem;
   }
   nav ul:not(:first-child) {

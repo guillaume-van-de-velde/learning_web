@@ -19,8 +19,8 @@
             width: 75px;
             border-radius: 50px;
             left: 50%;
-            top: -13%;
-            transform: translateX(-50%);
+            top:0;
+            transform: translate(-50%, -50%);
         }
         .message {
             line-height: 30px;
@@ -60,8 +60,5 @@
     }
     @media screen and (max-width:500px) {
         height: 100vh;
-        .message-part .picture-ceo {
-            top: -7%;
-        }
     }
 }
