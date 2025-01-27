@@ -78,4 +78,34 @@ footer {
             }
         }
     }
+    @media screen and (max-width: 1100px) {
+        background: $_black1;
+        .footer-content {
+            grid-template-columns: none;
+            .left-part {
+                display: none;
+            }
+            .right-part {
+                padding: 0;
+            }
+        }
+    }
+    @media screen and ((min-width:700px) and (max-width:1100px)) {
+        .footer-content .right-part {
+            width: 80%;
+            align-items: center;
+            form {
+                width: 50%;
+            }
+            .networks {
+                @include centerChild;
+                width: 70%;
+            }
+        }
+    }
+    @media screen and (max-width:500px) {
+        .footer-content .right-part form{
+            width: 60%;
+        }
+    }
 }

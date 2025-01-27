@@ -21,7 +21,7 @@
     }
     .event-post {
         height: 60%;
-        width: 80%;
+        min-width: 80%;
         display: grid;
         align-items: center;
         grid-template-columns: 60% 40%;
@@ -113,5 +113,8 @@
                 }
             }
         }
+    }
+    @media screen and (max-width:1000px) {
+        display: none;
     }
 }

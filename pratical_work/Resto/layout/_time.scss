@@ -1,5 +1,5 @@
 .time {
-    margin-top: 20%;
+    margin-top: 30%;
     width: 80%;
     height: 80vh;
     display: grid;
@@ -101,7 +101,7 @@
                 color: $_white;
                 height: 15%;
                 width: 30%;
-                border-radius: 30px;
+                border-radius: 150px;
                 font-size: 1rem;
                 text-transform: uppercase;
                 letter-spacing: 3px;
@@ -113,6 +113,50 @@
                     width: 35%;
                 }
             }
+            @media screen and (max-width: 1050px) {
+                height: 70%;
+                .input-data {
+                    grid-template-columns: none;
+                    grid-template-rows: repeat(1fr, 6);
+                    & > * {
+                        width: 300px;
+                    }
+                }
+                button {
+                    height: 10%;
+                }
+            }
+            @media screen and (max-width:600px) {
+                .input-data > * {
+                    width: 200px;
+                }
+                button {
+                    font-size: 0.8rem;
+                    letter-spacing: 2px;
+                    width: 40%;
+                    height: 8%;
+                    &:hover {
+                        letter-spacing: 4px;
+                        width: 50%;
+                    }
+                }
+            }
         }
+    }
+    @media screen and (max-width:1300px) {
+        margin-top: 50%;
+    }
+    @media screen and (max-width:1000px) {
+        margin-top: 60%;
+    }
+    @media screen and (max-width:500px) {
+        margin-top: 80%;
+    }
+    @media screen and (max-width:800px) {
+        grid-template-columns: none;
+        height: 180vh;
+    }
+    @media screen and (max-width: 400px) {
+        width: 95%;
     }
 }

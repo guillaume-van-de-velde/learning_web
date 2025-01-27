@@ -3,7 +3,7 @@
     position: relative;
     @include centerChild;
     .message-part {
-        height: 60%;
+        min-height: 60%;
         width: 80%;
         background: $_white;
         position: relative;
@@ -37,6 +37,18 @@
         .role {
             color: $_brown;
         }
+        @media screen and (max-width:800px) {
+            padding: 6% 0 5% 0;
+            .message, .role{
+                font-size: 0.8rem;
+            }
+            .message {
+                padding: 0 20% 0 20%;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+        }
     }
     .img-part {
         position: absolute;
@@ -45,5 +57,11 @@
         width: 100%;
         z-index: -1;
         background: url("../img/gmap.jpg") center/cover;
+    }
+    @media screen and (max-width:500px) {
+        height: 100vh;
+        .message-part .picture-ceo {
+            top: -7%;
+        }
     }
 }

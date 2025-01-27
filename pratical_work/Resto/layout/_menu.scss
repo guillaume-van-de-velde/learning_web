@@ -74,53 +74,79 @@
                 justify-content: center;
             }
         }
-        .mushroom {
-            .img {
-                content: url("../img/dish-item-01.jpg");
-            }
+        .mushroom .img {
+            content: url("../img/dish-item-01.jpg");
         }
-        .potatoes {
-            .img {
-                content: url("../img/dish-item-02.jpg");
-            }
+        .potatoes .img {
+            content: url("../img/dish-item-02.jpg");
         }
-        .tenu {
-            .img {
-                content: url("../img/dish-item-03.jpg");
-            }
+        .tenu .img {
+            content: url("../img/dish-item-03.jpg");
         }
-        .pork {
-            .img {
-                content: url("../img/dish-item-04.jpg");
-            }
+        .pork .img {
+            content: url("../img/dish-item-04.jpg");
         }
-        .chicken {
-            .img {
-                content: url("../img/dish-item-05.jpg");
-            }
+        .chicken .img {
+            content: url("../img/dish-item-05.jpg");
         }
-        .crab {
-            .img {
-                content: url("../img/dish-item-06.jpg");
-            }
+        .crab .img {
+            content: url("../img/dish-item-06.jpg");
         }
-        .steak {
-            .img {
-                content: url("../img/dish-item-07.jpg");
-            }
+        .steak .img {
+            content: url("../img/dish-item-07.jpg");
         }
-        .baked {
-            .img {
-                content: url("../img/dish-item-08.jpg");
-            }
+        .baked .img {
+            content: url("../img/dish-item-08.jpg");
         }
     }
     .img-background {
-        content: url("../img/bg-menu-01.jpg");
+        background: url("../img/bg-menu-01.jpg");
         position: absolute;
         z-index: -1;
         left: 0;
-        bottom: -20%;
+        top: 80%;
         width: 100%;
+        height: 50%;
+    }
+    @media screen and (max-width: 1300px) {
+        height: 140vh;
+        .card {
+            margin-top: 3%;
+            grid-template-columns: none;
+            grid-template-rows: repeat(1fr, 8);
+            height: 80%;
+        }
+    }
+    @media screen and (max-width:800px) {
+        li {
+            font-size: 0.7rem;
+        }
+        .card {
+            > div {
+                .img {
+                    height: 50px;
+                    width: 50px;
+                }
+                .description {
+                    p, .title{
+                        font-size: 0.8rem;
+                    }
+                }
+                > p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        .img-background {
+            top: 70%;
+        }
+    }
+    @media screen and (max-width:500px) {
+        ul {
+            width: 90%;
+        }
+        .card {
+            width: 90%;
+        }
     }
 }

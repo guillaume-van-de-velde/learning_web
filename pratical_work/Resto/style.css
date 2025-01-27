@@ -68,8 +68,19 @@ header nav ul li {
   transition: 0.3s;
 }
 header nav ul li:hover {
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   font-size: 1.5rem;
+}
+@media screen and (max-width: 1000px) {
+  header nav {
+    grid-template-columns: 50% 50%;
+  }
+  header nav .links {
+    display: none;
+  }
+  header nav .networks {
+    width: 80%;
+  }
 }
 header .title {
   display: flex;
@@ -106,6 +117,22 @@ header .title .title-content .slogan {
   font-family: "Roboto";
   font-weight: lighter;
   letter-spacing: 8px;
+}
+@media screen and (max-width: 600px) {
+  header .title .title-content .welcome :nth-child(1) {
+    font-size: 2rem;
+  }
+  header .title .title-content .welcome :nth-child(2) {
+    font-size: 3rem;
+  }
+  header .title .title-content .cutlery {
+    height: 30px;
+    width: 30px;
+  }
+  header .title .title-content .slogan {
+    letter-spacing: 4px;
+    font-size: 1.2rem;
+  }
 }
 
 .discover {
@@ -156,6 +183,14 @@ header .title .title-content .slogan {
   height: 100%;
   width: 100%;
   background: url("../img/store-01.jpg") center/cover;
+}
+@media screen and (max-width: 1000px) {
+  .discover {
+    grid-template-columns: none;
+  }
+  .discover .img-part {
+    display: none;
+  }
 }
 
 .menu {
@@ -262,16 +297,54 @@ header .title .title-content .slogan {
   content: url("../img/dish-item-08.jpg");
 }
 .menu .img-background {
-  content: url("../img/bg-menu-01.jpg");
+  background: url("../img/bg-menu-01.jpg");
   position: absolute;
   z-index: -1;
   left: 0;
-  bottom: -20%;
+  top: 80%;
   width: 100%;
+  height: 50%;
+}
+@media screen and (max-width: 1300px) {
+  .menu {
+    height: 140vh;
+  }
+  .menu .card {
+    margin-top: 3%;
+    grid-template-columns: none;
+    grid-template-rows: repeat(1fr, 8);
+    height: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .menu li {
+    font-size: 0.7rem;
+  }
+  .menu .card > div .img {
+    height: 50px;
+    width: 50px;
+  }
+  .menu .card > div .description p, .menu .card > div .description .title {
+    font-size: 0.8rem;
+  }
+  .menu .card > div > p {
+    font-size: 0.8rem;
+  }
+  .menu .img-background {
+    top: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu ul {
+    width: 90%;
+  }
+  .menu .card {
+    width: 90%;
+  }
 }
 
 .time {
-  margin-top: 20%;
+  margin-top: 30%;
   width: 80%;
   height: 80vh;
   display: grid;
@@ -390,7 +463,7 @@ header .title .title-content .slogan {
   color: rgb(231, 231, 231);
   height: 15%;
   width: 30%;
-  border-radius: 30px;
+  border-radius: 150px;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -401,6 +474,62 @@ header .title .title-content .slogan {
 .time .reservation form button:hover {
   letter-spacing: 6px;
   width: 35%;
+}
+@media screen and (max-width: 1050px) {
+  .time .reservation form {
+    height: 70%;
+  }
+  .time .reservation form .input-data {
+    grid-template-columns: none;
+    grid-template-rows: repeat(1fr, 6);
+  }
+  .time .reservation form .input-data > * {
+    width: 300px;
+  }
+  .time .reservation form button {
+    height: 10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .time .reservation form .input-data > * {
+    width: 200px;
+  }
+  .time .reservation form button {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    width: 40%;
+    height: 8%;
+  }
+  .time .reservation form button:hover {
+    letter-spacing: 4px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .time {
+    margin-top: 50%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .time {
+    margin-top: 60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .time {
+    margin-top: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .time {
+    grid-template-columns: none;
+    height: 180vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .time {
+    width: 95%;
+  }
 }
 
 .event {
@@ -433,7 +562,7 @@ header .title .title-content .slogan {
 }
 .event .event-post {
   height: 60%;
-  width: 80%;
+  min-width: 80%;
   display: grid;
   align-items: center;
   grid-template-columns: 60% 40%;
@@ -528,6 +657,11 @@ header .title .title-content .slogan {
   flex-direction: column;
   justify-content: space-between;
 }
+@media screen and (max-width: 1000px) {
+  .event {
+    display: none;
+  }
+}
 
 .ceo {
   height: 70vh;
@@ -537,7 +671,7 @@ header .title .title-content .slogan {
   justify-content: center;
 }
 .ceo .message-part {
-  height: 60%;
+  min-height: 60%;
   width: 80%;
   background: rgb(231, 231, 231);
   position: relative;
@@ -572,6 +706,20 @@ header .title .title-content .slogan {
 .ceo .message-part .role {
   color: rgb(194, 129, 92);
 }
+@media screen and (max-width: 800px) {
+  .ceo .message-part {
+    padding: 6% 0 5% 0;
+  }
+  .ceo .message-part .message, .ceo .message-part .role {
+    font-size: 0.8rem;
+  }
+  .ceo .message-part .message {
+    padding: 0 20% 0 20%;
+  }
+  .ceo .message-part h3 {
+    font-size: 1rem;
+  }
+}
 .ceo .img-part {
   position: absolute;
   bottom: -20%;
@@ -579,6 +727,14 @@ header .title .title-content .slogan {
   width: 100%;
   z-index: -1;
   background: url("../img/gmap.jpg") center/cover;
+}
+@media screen and (max-width: 500px) {
+  .ceo {
+    height: 100vh;
+  }
+  .ceo .message-part .picture-ceo {
+    top: -7%;
+  }
 }
 
 footer {
@@ -667,4 +823,38 @@ footer .footer-content .right-part .networks ul li {
 }
 footer .footer-content .right-part .networks ul li:hover {
   opacity: 1;
+}
+@media screen and (max-width: 1100px) {
+  footer {
+    background: rgb(31, 31, 31);
+  }
+  footer .footer-content {
+    grid-template-columns: none;
+  }
+  footer .footer-content .left-part {
+    display: none;
+  }
+  footer .footer-content .right-part {
+    padding: 0;
+  }
+}
+@media screen and ((min-width: 700px) and (max-width: 1100px)) {
+  footer .footer-content .right-part {
+    width: 80%;
+    align-items: center;
+  }
+  footer .footer-content .right-part form {
+    width: 50%;
+  }
+  footer .footer-content .right-part .networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  footer .footer-content .right-part form {
+    width: 60%;
+  }
 }/*# sourceMappingURL=style.css.map */
