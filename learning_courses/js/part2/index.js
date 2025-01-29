@@ -137,37 +137,37 @@ window.addEventListener("DOMContentLoaded", () => {
     console.log("yooooo");
 });
 
-const boxes = document.querySelectorAll(".box");
-let b = 0;
+// const boxes = document.querySelectorAll(".box");
+// let b = 0;
 
-boxes.forEach(element => {
-    element.addEventListener('click', (e) => {
-        b++;
-        if (b % 2 == 0) {
-            e.target.style.transform = "scale(0.7)";
-            b == 0;
-        }
-        else
-            e.target.style.transform = "scale(1)";
-    })
-});
+// boxes.forEach(element => {
+//     element.addEventListener('click', (e) => {
+//         b++;
+//         if (b % 2 == 0) {
+//             e.target.style.transform = "scale(0.7)";
+//             b == 0;
+//         }
+//         else
+//             e.target.style.transform = "scale(1)";
+//     })
+// });
 
-document.body.onclick = () => {
-    console.log("Click !");
-}
+// document.body.onclick = () => {
+//     console.log("Click !");
+// }
 
-document.body.addEventListener("click", () => {
-    console.log("Click 2 !");
-}, false);
+// document.body.addEventListener("click", () => {
+//     console.log("Click 2 !");
+// }, false);
 
-document.body.addEventListener("click", () => {
-    console.log("Click 3 !");
-}, true);
+// document.body.addEventListener("click", () => {
+//     console.log("Click 3 !");
+// }, true);
 
-questionContainer.addEventListener('click', (e) => {
-    console.log("yaaaaa");
-    e.stopPropagation();
-})
+// questionContainer.addEventListener('click', (e) => {
+//     console.log("yaaaaa");
+//     e.stopPropagation();
+// })
 
 console.log(window.innerWidth);
 console.log(window.scrollY);
@@ -193,21 +193,21 @@ setTimeout(
     }, 2000
 )
 
-let interval = setInterval(
-    () => {
-        document.body.innerHTML += "<div class='box'><h2>Nouvelle boite !</h2></div>"
-    }, 1000
-);
+// let interval = setInterval(
+//     () => {
+//         document.body.innerHTML += "<div class='box'><h2>Nouvelle boite !</h2></div>"
+//     }, 1000
+// );
 
-document.body.addEventListener("click", () => {
-    clearInterval(interval);
-});
+// document.body.addEventListener("click", () => {
+//     clearInterval(interval);
+// });
 
-setTimeout(
-    () => {
-        clearInterval(interval);
-    }, 5000
-);
+// setTimeout(
+//     () => {
+//         clearInterval(interval);
+//     }, 5000
+// );
 
 console.log(location.href);
 console.log(location.host);
@@ -221,8 +221,13 @@ function fun(pos) {
     console.log(crd.latitude);
 }
 
-navigator.geolocation.getCurrentPosition(fun);
+// navigator.geolocation.getCurrentPosition(fun);
 
 console.log(history);
 // window.history.back();
 // history.go(-2);
+
+window.addEventListener("mousemove", (e) => {
+    nav.style.setProperty('--x', e.layerX + "px");
+    nav.style.setProperty('--y', e.layerY + "px");
+});
