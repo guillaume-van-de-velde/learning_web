@@ -185,7 +185,7 @@ arrayNumber.push(17);
 
 // console.log(arrayNumber.filter((numbe) => numbe > 10).sort((a, b) => b - a));
 
-document.body.innerHTML = arrayNumber
+document.body.innerHTML += arrayNumber
     .map((number) =>`<li>${number}</li>`)
     .join("");
 
@@ -246,7 +246,7 @@ let [x, y, z] = array5;
 // console.log(y);
 // console.log(z);
 
-console.log(iso);
+// console.log(iso);
 const dateDestructuring = (chaine) => {
     [y, m, d] = chaine.split('T')[0].split("-");
     return [d, m, y].join("/");
@@ -254,4 +254,32 @@ const dateDestructuring = (chaine) => {
 
 // console.log(dateDestructuring(iso));
 
+const h3js = document.getElementById('html');
+// console.log(h3js.dataset.lang);
 
+const h3 = document.querySelectorAll('h3');
+
+// h3.forEach((language) => {
+//     console.log(language.dataset.lang);
+// })
+
+let mail = "phxnk_music@gmail.com";
+// console.log(mail.search(/phxnk/));
+
+// console.log(mail.replace(/phxnk/, "drill"));
+
+// console.log(mail.match(/_music/i));
+
+// console.log(mail.match(/[ziup]/));
+
+// console.log(mail.match(/[123]/));
+
+// console.log(mail.match(/\d/));
+
+// console.log(mail.match(/[q-z]/));
+
+// console.log(mail.match(/^[\w_-]+@[\w-]+\.[a-z]{2,4}$/i));
+
+let separator = 2532365423;
+
+console.log(separator.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
