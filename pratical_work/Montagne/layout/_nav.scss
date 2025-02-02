@@ -37,14 +37,7 @@ nav {
             display: flex;
             height: 8vh;
             ul li {
-                height: 100%;
                 font-size: 0.8rem;
-                border: 2px solid red;
-            }
-            ul {
-                display: flex;
-                padding: 0;
-                border: 2px solid blue;
             }
             & ul:not(:first-child) {
                 display: none;

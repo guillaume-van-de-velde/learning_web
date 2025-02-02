@@ -201,14 +201,7 @@ nav ul:hover #fix_color:not(:hover) {
     height: 8vh;
   }
   nav ul li {
-    height: 100%;
     font-size: 0.8rem;
-    border: 2px solid red;
-  }
-  nav ul {
-    display: flex;
-    padding: 0;
-    border: 2px solid blue;
   }
   nav ul:not(:first-child) {
     display: none;
