@@ -56,3 +56,36 @@ async function fetchData() {
     await fetch('data.json');
     console.log("hello");
 }
+
+fetch('data.json').then(res => res.json()).then(data => {
+    let settings = JSON.stringify(data);
+    // console.log(data);
+    // console.log(settings);
+    // console.log(JSON.parse(settings));
+});
+
+// localStorage.data = "Je stock la data";
+
+// document.body.textContent = localStorage.data;
+
+
+const obj = {
+    name: "phxnk",
+    age: 21
+}
+
+// localStorage.user = JSON.stringify(obj);
+
+// console.log(JSON.parse(localStorage.user));
+
+
+// localStorage.removeItem('user');
+
+
+// sessionStorage.dataSettings = "42";
+
+// sessionStorage.clear();
+
+// document.cookie = "username=Phxnk";
+
+// document.cookie = "pseudo=PH;path=/; max-age=450000; secure; samesite"
