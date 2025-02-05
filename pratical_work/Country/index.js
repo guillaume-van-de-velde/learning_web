@@ -1,43 +1,62 @@
-// 1 - Tester le lien de l'API dans le navigateur (https://restcountries.com/v3.1/all)
-
-// 2 - Créer une fonction pour "fetcher" les données, afficher les données dans la console.
-
-// 3 - Passer les données à une variable
-
-// 4 - Créer une fonction d'affichage, et paramétrer l'affichage des cartes de chaque pays grace à la méthode MAP
-
-// 5 - Récupérer ce qui est tapé dans l'input et filtrer (avant le map) les données
-// coutry.name.includes(inputSearch.value);
-
-// 6 - Avec la méthode Slice gérer le nombre de pays affichés (inputRange.value)
-
-// 7 - Gérer les 3 boutons pour trier (méthode sort()) les pays
-
 let countries = [];
+let sortMethod = 2;
+const countriesContainer = document.querySelector('.countries-container');
+const btnSort = document.querySelectorAll('.btnSort');
 
 function fetchCountries() {
     fetch("https://restcountries.com/v3.1/all")
         .then(res => res.json())
-        .then(data => countries = data);
+        .then(data => {
+            countries = data;
+            displayCountry();
+        });
 }
+
+window.addEventListener("load", () => {
+    fetchCountries();
+});
 
 function displayCountry() {
-    countriesContainer = document.querySelector('.countries-container');
-    
-    countries.map(country => {
-        countriesContainer.innerHTML += `
-        <div .country>
-            <img src="${country.coatOfArms.svg}"></img>
-            <h3>${country.name.common}</h3>
-            <p>${country.capital ? country.capital[0] : ""}<p>
-            <p>Population: ${country.population}</p>
-        </div>
-        `;
+    let dupCountries = Array.from(countries);
+    countriesContainer.innerHTML = dupCountries
+    .sort((a, b) => {
+        if (sortMethod == "minToMax")
+            return a.population - b.population;
+        else if (sortMethod == "maxToMin")
+            return b.population - a.population;
+        else
+            return a.name.common.localeCompare(b.name.common);
     })
+    .filter(country => {
+        return country.name.common.toLowerCase().match(inputSearch.value.toLowerCase());
+    })
+    .map((country, index) => {
+        if (index < inputRange.value)
+        {
+            return `
+            <div class="country">
+                <img src="${country.flags.svg}"></img>
+                <h3>${country.name.common}</h3>
+                <p>${country.capital && country.capital[0] ? country.capital[0] : ""}</p>
+                <p>Population: ${country.population.toLocaleString().replaceAll(',', ' ')}</p>
+            </div>
+            `;
+        }
+    }).join("");
 }
 
-fetchCountries();
-
-setTimeout(() => {
+inputSearch.addEventListener("input", () => {
     displayCountry();
-}, 1000)
+});
+
+btnSort.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+        sortMethod = e.target.id;
+        displayCountry();
+    });
+})
+
+inputRange.addEventListener("input", () => {
+    rangeValue.textContent = inputRange.value;
+    displayCountry();
+});
