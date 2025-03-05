@@ -25,8 +25,8 @@ const Countries = () => {
           defaultValue={rangeValue}
           onChange={(e) => setRangeValue(e.target.value)}
         />
-        {radios.map((continent) => (
-          <li>
+        {radios.map((continent, index) => (
+          <li key={index}>
             <input
               type="radio"
               id={continent}
