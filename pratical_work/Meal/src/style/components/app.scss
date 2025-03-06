@@ -1,0 +1,43 @@
+.logo {
+    font-family: "Dancing Script";
+    color: $_sanguine;
+    padding: 20px 0;
+    font-size: 3rem;
+}
+
+#searchbar {
+    width: 60%;
+    padding: 15px 0;
+    margin: 20px 0 50px;
+    border-radius: 30px;
+    text-align: center;
+    color: $_sanguine;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: solid black 1px;
+
+    &::placeholder {
+        font-size: 1.2rem;
+        text-align: center;
+        color: $_sanguine;
+        opacity: 0.7;
+    }
+
+    &:focus::placeholder {
+        opacity: 0;
+    }
+
+    &:focus {
+        outline: none;
+        border: solid $_sanguine 1px;
+    }
+}
+
+.listmeals {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-bottom: 30px;
+}
