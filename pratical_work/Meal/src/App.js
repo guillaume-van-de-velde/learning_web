@@ -1,4 +1,4 @@
-import React, { use, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Meal from './components/Meal';
 import axios from "axios";
 
@@ -8,25 +8,19 @@ const App = () => {
   async function getMeals(userInput) {
     await axios
     .get("https://www.themealdb.com/api/json/v1/1/search.php?s=" + userInput)
-    .then(res => setMeals(res));
+    .then(res => setMeals(res.data.meals));
   }
-
-  useEffect(() => {
-    getMeals("Beef");
-    console.log(meals);
-  }, []);
 
   return (
     <div className='app'>
       <h1 className='logo'>ReactMeal</h1>
-      <input id='searchbar' type="text" placeholder='search' />
+      <input id='searchbar' type="text" placeholder='search' onChange={e => e.target.value ? getMeals(e.target.value) : ""}/>
       <ul className="listmeals">
-        <Meal />
-        <Meal />
-        <Meal />
-        <Meal />
-        <Meal />
-        <Meal />
+        {meals && meals.map((meal, index) => {
+          return (
+            <Meal key={index} meal={meal}/>
+          );
+        })}
       </ul>
     </div>
   );

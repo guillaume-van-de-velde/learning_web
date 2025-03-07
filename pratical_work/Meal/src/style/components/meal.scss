@@ -5,8 +5,18 @@
     padding: 3% 0;
     background: $_sanguineSoft;
     color: $_sanguine;
-    & > * {
-        padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .title {
+        & > * {
+            padding: 3% 0;
+        }
+        img {
+            width: 90%;
+            border-radius: 50px;
+        }
     }
     li {
         list-style: none;
@@ -14,13 +24,15 @@
         padding-left: 10%;
         font-size: 1.2rem;
     }
-    img {
-        width: 90%;
-        border-radius: 50px;
-    }
-    p {
-        font-size: 0.7rem;
-        text-align: left;
-        padding: 3% 5%;
+    .preparation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        p {
+            font-size: clamp(5px, 5vh, 15px);;
+            text-align: left;
+            padding: 3% 5%;
+        }
     }
 }
