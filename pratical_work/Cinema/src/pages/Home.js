@@ -40,7 +40,7 @@ const Home = () => {
             <ul className="listmoovies">
                 {listMoovies.map((moovie, index) => {
                     return (
-                        <Card key={index} moovie={moovie}/>
+                        <Card key={index} moovie={moovie} parent={"Home"}/>
                     );
                 })}
             </ul>
