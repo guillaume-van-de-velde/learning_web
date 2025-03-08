@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Meal = (meal) => {
+const Meal = ({meal}) => {
     const listProduct = [];
     
     function getListProduct() {
@@ -9,8 +9,8 @@ const Meal = (meal) => {
             let ingredient = `strIngredient${i}`;
             let measure = `strMeasure${i}`;
 
-            ingredient = meal.meal[ingredient];
-            measure = meal.meal[measure];
+            ingredient = meal[ingredient];
+            measure = meal[measure];
 
             if (!ingredient)
                 break ;
@@ -24,12 +24,13 @@ const Meal = (meal) => {
     return (
         <li className="meal">
             <div className="title">
-                <h2>{meal.meal.strMeal}</h2>
-                <h3>{meal.meal.strArea}</h3>
-                <img src={meal.meal.strMealThumb} alt="" />
+                <h2>{meal.strMeal}</h2>
+                <h3>{meal.strArea}</h3>
+                <img src={meal.strMealThumb} alt="" />
             </div>
             <ul className="ingredients">
-                {listProduct.map((product, index) => {
+                {listProduct &&
+                listProduct.map((product, index) => {
                     return (
                         <li key={index}>{product}</li>
                     );
@@ -37,7 +38,8 @@ const Meal = (meal) => {
             </ul>
             <div className="preparation">
                 <p>
-                    {meal.meal.strInstructions
+                    {meal.strInstructions && 
+                    meal.strInstructions
                     .split('\n')
                     .map((line, index) => {
                         return (<React.Fragment key={index}>
