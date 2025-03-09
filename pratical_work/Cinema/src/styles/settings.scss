@@ -8,3 +8,22 @@
     src: url(./fonts/Dongle-Regular.ttf);
 }
 
+$_lightBlue: rgb(84, 111, 228);
+$_darkBlue: rgb(33, 32, 64);
+$_darkBlueCard: rgb(5, 13, 43);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $_darkBlue;
+    color: white;
+    font-family: "Dongle-Regular";
+    height: 100vh;
+}
+
+#root {
+    height: 100vh;
+}

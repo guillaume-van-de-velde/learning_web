@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Navigation from '../components/Navigation';
+import Header from '../components/Header';
 import Card from '../components/Card';
 import axios from 'axios';
 
@@ -23,9 +23,10 @@ const Heart = () => {
 
     return (
         <div className="heart">
-            <Navigation />
+            <Header />
             <ul className="listmoovies">
-                {listLiked.map((moovie, index) => {
+                {listLiked && genres[0] && 
+                listLiked.map((moovie, index) => {
                     return (
                         <Card key={index} moovie={moovie} parent={"Heart"} genres={genres} />
                     );

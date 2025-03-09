@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = ({moovie, parent, genres}) => {
     return (
-        <li>
+        <li className='card'>
             <img width="300px" src={moovie.poster_path ? "https://image.tmdb.org/t/p/original/" + moovie.poster_path : "./img/poster.jpg"} alt="" />
             <div className="description">
                 <h3>{moovie.original_title}</h3>
