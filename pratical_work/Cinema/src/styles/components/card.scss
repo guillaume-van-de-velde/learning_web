@@ -25,6 +25,13 @@
             white-space: nowrap;
             overflow: hidden;
         }
+        .grade {
+            font-size: 1.5rem;
+            i {
+                font-size: 1rem;
+                color: yellow;
+            }
+        }
         .overview {
             width: 90%;
             text-align: center;
