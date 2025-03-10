@@ -17,9 +17,9 @@ const Card = ({moovie, parent, genres}) => {
                 <p className="overview">{moovie.overview}</p>
             </div>
             <button 
-            className='add-heart' 
+            className='add-heart'
             onClick={parent === "Home" 
-                ? () => localStorage.setItem(moovie.original_title, JSON.stringify(moovie)) 
+                ? () => localStorage.setItem(moovie.original_title, JSON.stringify(moovie))
                 : () => {
                     localStorage.removeItem(moovie.original_title, JSON.stringify(moovie));
                     window.location.reload();

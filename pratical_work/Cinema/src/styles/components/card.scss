@@ -1,0 +1,93 @@
+.listmoovies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.card {
+    background: $_darkBlueCard;
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    img {
+        padding: 20px;
+        width: 60%;
+        border-radius: 50px;
+    }
+    .description {
+        width: 100%;
+        text-align: center;
+        h3 {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .overview {
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+            display: -webkit-box;
+            @supports (-webkit-line-clamp: 5) {
+                -webkit-line-clamp: 5;
+            }
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            position: relative;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+                &::after {
+                    content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 4em;
+                        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), $_darkBlueCard);
+                        border-radius: 50px;
+                }
+        }
+        .genre {
+            align-items: center;
+            list-style: none;
+            width: fit-content;
+            min-width: 50%;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            margin: 0 auto;
+            overflow-y: hidden;
+            li {
+                padding: 0 5px;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+    }
+    .add-heart {
+        font-family: "Dongle-Regular";
+        position: absolute;
+        bottom: 2%;
+        background: $_lightBlue;
+        border: none;
+        color:white;
+        border-radius: 10px;
+        height: 7%;
+        font-size: 1.2rem;
+        padding: 0 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+        transition: 1s;
+        &:hover {
+            background: rgb(0, 140, 255);
+        }
+        &:active {
+            transition: 0s;
+            background: rgb(23, 170, 89);
+        }
+    }
+}

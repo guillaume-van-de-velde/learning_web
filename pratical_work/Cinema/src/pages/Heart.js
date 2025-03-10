@@ -24,14 +24,16 @@ const Heart = () => {
     return (
         <div className="heart">
             <Header />
-            <ul className="listmoovies">
-                {listLiked && genres[0] && 
-                listLiked.map((moovie, index) => {
-                    return (
-                        <Card key={index} moovie={moovie} parent={"Heart"} genres={genres} />
-                    );
-                })}
+            {(listLiked && genres && listLiked[0] && genres[0]) ?
+            <ul className="listmoovies"> {
+            listLiked.map((moovie, index) => {
+                return (
+                    <Card key={index} moovie={moovie} parent={"Heart"} genres={genres} />
+                );
+            })}
             </ul>
+            :  <h2 className='nothing-add'>Vous n'avez pas ajouter de titres aux coups de coeur</h2>
+            }
         </div>
     );
 };
