@@ -1,5 +1,9 @@
-.nothing-add {
-    margin-top: 5vh;
+.nothing-add, .heart-sentence {
+    margin: 5vh 0;
     text-align: center;
     font-size: 3rem;
+    i {
+        font-style: normal;
+        font-size: 2rem;
+    }
 }

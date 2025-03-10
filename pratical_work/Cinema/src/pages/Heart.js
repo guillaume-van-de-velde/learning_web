@@ -25,13 +25,18 @@ const Heart = () => {
         <div className="heart">
             <Header />
             {(listLiked && genres && listLiked[0] && genres[0]) ?
-            <ul className="listmoovies"> {
-            listLiked.map((moovie, index) => {
-                return (
-                    <Card key={index} moovie={moovie} parent={"Heart"} genres={genres} />
-                );
-            })}
-            </ul>
+            <div className="heartlist-exist">
+                <h2 className='heart-sentence'>
+                    Coups de coeur <i>❤️</i>
+                </h2>
+                <ul className="listmoovies"> {
+                listLiked.map((moovie, index) => {
+                    return (
+                        <Card key={index} moovie={moovie} parent={"Heart"} genres={genres} />
+                    );
+                })}
+                </ul>
+            </div>
             :  <h2 className='nothing-add'>Vous n'avez pas ajouter de titres aux coups de coeur</h2>
             }
         </div>

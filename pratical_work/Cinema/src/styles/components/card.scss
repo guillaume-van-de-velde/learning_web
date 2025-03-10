@@ -88,9 +88,9 @@
         white-space: nowrap;
         overflow: hidden;
         cursor: pointer;
-        transition: 1s;
+        transition: 0.3s;
         &:hover {
-            background: rgb(0, 140, 255);
+            background: $_blueHover;
         }
         &:active {
             transition: 0s;
