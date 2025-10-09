@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+@theme {
+    /* --color-orange-550: blue;
+    --font-merriweather: 'Merriweather', 'arial;' */
+}
+
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+
+@layer base {
+    /* li {
+        text-decoration: underline;
+        color: blue;
+    } */
+}
+
+@layer components {
+    .btn {
+        @apply bg-orange-500 text-3xl text-white px-14 py-4 m-5 rounded-lg hover:bg-black duration-300 cursor-pointer mx-auto block mt-10;
+    }
+}
+
+@utility flex-centered {
+    @apply flex justify-center items-center;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSY BAR - Landing Page Formation Believemy</title>
+    <link rel="stylesheet" href="src/css/output.css">
+</head>
+<body>
+    <video src="src/assets/images/welcome.mp4" autoplay loop muted class="absolute -z-1 object-cover w-full h-screen"></video>
+    <main class="container mx-auto min-h-screen flex flex-col justify-around">
+        <section class="w-9/10 mx-auto p-5  flex justify-between">
+            <ul class="flex w-1/2 justify-around items-center text-gray-500">
+                <li>BUSY Bar</li>
+                <li class="underline">Boutique</li>
+                <li class="underline">Telechargements</li>
+                <li class="underline">Blog</li>
+            </ul>
+            <img src="src/assets/images/badge.svg" class="max-w-1/5 grayscale-100 hover:grayscale-0 cursor-pointer hover:-translate-y-1 duration-200">
+        </section>
+        <section class="mt-[40vh] flex flex-col max-w-[550px] mx-auto text-xl grow">
+            <p>
+                <span class="font-bold">BUSY Bar</span> est un dispositif Lorem ipsum, 
+                dolor sit amet consectetur adipisicing elit. 
+                Voluptatibus, error. Tempore sequi repellat 
+                assumenda libero illo veritatis atque doloremque 
+                voluptate! Est fugit consequatur cupiditate distinctio 
+                necessitatibus rerum dolorem exercitationem non?
+            </p>
+            <button class="btn">
+                Acheter
+            </button>
+        </section>
+        <section class="w-full mx-auto h-full pb-5">
+            <ul class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 mt-32 md:mt-0 [&_h1]:text-xl [&_h1]:mb-1.5 [&_p]:text-sm [&_img]:max-w-14 [&_img]:m-1.5 justify-between opacity-80 gap-5">
+                <li class="flex gap-3">
+                    <img src="src/assets/images/feature-one.svg" alt="">
+                    <div>
+                        <h1>Outil de Productivite</h1>
+                        <p>Blockage des distractions, message BUSY personnalise, minuteur de concentration, synchronisation multiplateforme</p>
+                    </div>
+                </li>
+                <li class="flex gap-3">
+                    <img src="src/assets/images/feature-two.svg" alt="">
+                    <div>
+                        <h1>Applications et integration</h1>
+                        <p>Bibliotheque d'applications, connexion a des logiciels tiers, integration avec les evenements de calendrier et les appels</p>
+                    </div>
+                </li>
+                <li class="flex gap-3">
+                    <img src="src/assets/images/feature-three.svg" alt="" class="grayscale-100">
+                    <div>
+                        <h1>Support maison connectee</h1>
+                        <p>Connectez-vous a Google Home et Apple Home via le protocole Matter</p>
+                    </div>
+                <li class="flex gap-3">
+                    <img src="src/assets/images/feature-four.svg" alt="">
+                    <div>
+                        <h1>Pour les developpeurs</h1>
+                        <p>API HTTP ouverte, SDK open-source, bibliotheques Python/Go/Javascript sans verouillage fournisseur</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <section class="h-screen flex justify-between m-5">
+        <div class="w-4/10 flex flex-col justify-center">
+            <div>
+                <h1 class="text-3xl font-medium mb-5 font-merriweather">
+                    Montrez que vous etes occupe
+                </h1>
+                <p>
+                    Empechez les autres d'interrompre votre concentration profonde. L'ecran affiche que vous etes occupe et quand vous serez a nouveau disponible.
+                </p>
+            </div>
+            <div class="flex flex-col mt-20 [&_img]:max-w-48 [&_h2]:text-xl opacity-80 gap-10">
+                <div class="flex items-center gap-5">
+                    <img src="src/assets/images/demo-one.png" alt="">
+                    <div>
+                        <h2>Activation instantanee</h2>
+                        <p>Activez et desactivez le statut BUSY manuellement avec un large boutton. Fonctionne entierement hors ligne, sans logiciel supplementaire requis.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <img src="src/assets/images/demo-two.png" alt="">
+                    <div>
+                        <h2>Set timer</h2>
+                        <p>Set an optionnal expiration timer BUSY using the scroll wheel to let others know when you'll be available again.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <video src="src/assets/images/busy.mp4" class="w-1/2 object-cover" autoplay loop muted></video>
+    </section>
+</body>
+</html>
